@@ -8,11 +8,11 @@
                 <page string="Basic Property Information" name="basic_property_information">
                     <group>
                         <field name="rental_property_id"/>
-                        <field name="rental_property_id.address" string="Address"/>
-                        <field name="rental_property_id.property_type" string="Property Type"/>
-                        <field name="rental_property_id.number_of_rooms" string="Number of Rooms"/>
-                        <field name="rental_property_id.number_of_bathrooms" string="Number of Bathrooms"/>
-                        <field name="rental_property_id.size_m2" string="Surface Area (m²)"/>
+                        <field name="rental_property_address"/>
+                        <field name="rental_property_type"/>
+                        <field name="rental_property_number_of_rooms"/>
+                        <field name="rental_property_number_of_bathrooms"/>
+                        <field name="rental_property_size_m2"/>
                     </group>
                 </page>
             </xpath>
