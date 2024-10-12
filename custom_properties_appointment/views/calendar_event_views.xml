@@ -44,11 +44,4 @@
             </xpath>
         </field>
     </record>
-
-    <!-- Add JavaScript to handle drag and drop conflict checking -->
-    <template id="assets_backend" inherit_id="web.assets_backend" name="custom properties calendar">
-        <xpath expr="." position="inside">
-            <script type="text/javascript" src="/custom_properties_appointment/static/src/js/calendar_event_drag_drop.js"></script>
-        </xpath>
-    </template>
 </odoo>
