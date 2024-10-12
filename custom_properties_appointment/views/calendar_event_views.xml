@@ -11,4 +11,37 @@
             </xpath>
         </field>
     </record>
+
+    <record id="view_calendar_event_form_quick_create_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.form.quick.create.inherit</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form_quick_create"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_ids']" position="after">
+                <field name="rental_property_id" placeholder="Select rental property..." options="{'no_quick_create': True}" class="oe_inline"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_calendar_event_tree_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.tree.inherit</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='location']" position="replace">
+                <field name="rental_property_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_calendar_event_calendar_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.calendar.inherit</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_calendar"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_ids']" position="before">
+                <field name="rental_property_id" widget="many2one" options="{'no_create': True, 'icon': 'fa fa-building-o'}"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
