@@ -4,17 +4,10 @@
         <field name="model">calendar.event</field>
         <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//notebook" position="inside">
-                <page string="Basic Property Information" name="basic_property_information">
-                    <group>
-                        <field name="rental_property_id"/>
-                        <field name="rental_property_address"/>
-                        <field name="rental_property_type"/>
-                        <field name="rental_property_number_of_rooms"/>
-                        <field name="rental_property_number_of_bathrooms"/>
-                        <field name="rental_property_size_m2"/>
-                    </group>
-                </page>
+            <xpath expr="//field[@name='partner_ids']" position="after">
+                <div class="d-flex align-items-baseline" colspan="2">
+                    <field name="rental_property_id" placeholder="Select rental property..." options="{'no_quick_create': True}" class="oe_inline"/>
+                </div>
             </xpath>
         </field>
     </record>
