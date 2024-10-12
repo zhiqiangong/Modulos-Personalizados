@@ -4,9 +4,16 @@
         <field name="model">calendar.event</field>
         <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='partner_ids']" position="after">
-                <page string="Available Properties" name="available_properties">
-                    <field name="rental_property_id"/>
+            <xpath expr="//notebook" position="inside">
+                <page string="Basic Property Information" name="basic_property_information">
+                    <group>
+                        <field name="rental_property_id"/>
+                        <field name="rental_property_id.address" string="Address"/>
+                        <field name="rental_property_id.property_type" string="Property Type"/>
+                        <field name="rental_property_id.number_of_rooms" string="Number of Rooms"/>
+                        <field name="rental_property_id.number_of_bathrooms" string="Number of Bathrooms"/>
+                        <field name="rental_property_id.size_m2" string="Surface Area (m²)"/>
+                    </group>
                 </page>
             </xpath>
         </field>
