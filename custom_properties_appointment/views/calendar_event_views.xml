@@ -45,13 +45,13 @@
         </field>
     </record>
 
-    <record id="view_calendar_event_form_inherit" model="ir.ui.view">
-        <field name="name">calendar.event.button.in.propertie.inherit</field>
-        <field name="model">calendar.event</field>
+    <record id="view_rent_property_form_button_inherit" model="ir.ui.view">
+        <field name="name">calendar.event.button.in.property.inherit</field>
+        <field name="model">rental.property</field>
         <field name="inherit_id" ref="alquileres.view_rent_property_form"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@class='oe_button_box']" position="after">
-                <button name="oe_stat_button" string="Appointments" type="action" class="btn-primary"/>
+                <button name="action_view_appointments" string="Appointments" type="object" class="btn-primary"/>
             </xpath>
         </field>
     </record>
