@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <template id="faqs_page" name="Alquileres Page">
+            <t t-call="portal.frontend_layout">
+                <div class="contenedo_backend">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </t>    
+        </template>
+    </data>    
+</odoo>
