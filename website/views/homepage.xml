@@ -7,7 +7,7 @@
                     Gestión Integral de Viviendas en Alquiler
                 </div>
                 
-                <div class="search-container">
+                <div class="search-container search-separation">
                     <form class="search-form">
                         <div class="form-group">
                             <label for="provincia">Provincia</label>
