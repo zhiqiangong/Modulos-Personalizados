@@ -70,6 +70,26 @@
     margin-bottom: 20px;
 }
 
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta la altura según lo que necesites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    width: 95%; /* Ajusta el porcentaje según el espacio que quieras en los lados */
+    height: 95%; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    z-index: 1;
+}
+
 /* Caja de búsqueda */
 .search-container {
     display: inline-block;
@@ -80,6 +100,7 @@
     max-width: 600px; /* Reduced max-width */
     width: 100%;
     position: relative;
+    z-index: 2;
 }
 
 /* Nueva clase para la separación */
