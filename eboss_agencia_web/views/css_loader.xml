@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Load css File -->
+    <template id="my_custom_css_asset" inherit_id="web.assets_backend">
+      <xpath expr="." position="inside">
+        <link rel="stylesheet" href="/eboss_agencia_web/static/src/css/estilos.css"/>
+      </xpath>
+    </template>
+  </data>
+</odoo>
