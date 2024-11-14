@@ -35,6 +35,141 @@
                         </form>
                     </div>
                 </div>
+                <div class="info-text text-separator">
+                    <h2 class="small-blue-text">Alquila tu vivienda</h2>
+                    <h1 class="large-text">Agencia de gestión de propiedades</h1>
+                    <p>EBOSS Agencia es una nueva forma de alquilar viviendas a través de los pisos compartidos.</p>
+                    <p>Alquile su piso a EBOSS Agencia de forma segura y obtenga una mayor rentabilidad. Nos encargamos de todo y empezará a cobrar desde el primer mes.</p>
+                </div>
+                <div class="info-row">
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_alquiler.png" alt="Alquiler 100% seguro" class="info-image"/>
+                        <h3>Alquiler 100% seguro</h3>
+                        <p>Eboss Agencia asume el riesgo al 100% sobre el pago del alquiler a través de un contrato directo con el propietario de la vivienda.</p>
+                    </div>
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_grafica.png" alt="Mayor rentabilidad" class="info-image"/>
+                        <h3>Mayor rentabilidad</h3>
+                        <p>El alquiler de viviendas compartidas supone de media un 15% más de ingresos anuales para nuestros propietarios.</p>
+                    </div>
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_gestion.png" alt="Gestión integral" class="info-image"/>
+                        <h3>Gestión integral</h3>
+                        <p>Eboss Agencia Inmobiliaria nos encargamos de todas las gestiones. Despreocúpate del cobro, de los inquilinos, del mantenimiento, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="property-section">
+                <div class="property-section-content">
+                    <div class="property-image">
+                        <img src="/eboss_agencia_web/static/src/img/imagen2.png" alt="Imagen de la propiedad"/>
+                        <button class="contact-button">Contactar</button>
+                    </div>
+                    <div class="property-form-container">
+                        <h2>Quiero alquilar mi piso</h2>
+                        <form class="property-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="E-mail"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="habitaciones">Habitaciones</label>
+                                    <input type="number" id="habitaciones" name="habitaciones" min="1" value="1"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="banos">Baños</label>
+                                    <input type="number" id="banos" name="banos" min="1" value="1"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ascensor">Ascensor</label>
+                                    <select id="ascensor" name="ascensor">
+                                        <option value="si">Sí</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="planta_baja">Planta baja</label>
+                                    <select id="planta_baja" name="planta_baja">
+                                        <option value="si">Sí</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="terraza">Terraza</label>
+                                    <select type="number" id="terraza" name="terraza">
+                                        <option value="si">Sí</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="metros_vivienda">Metros Vivienda</label>
+                                    <input type="number" id="metros_vivienda" name="metros_vivienda" min="1" value="1"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="municipio">Municipio</label>
+                                    <input type="name" id="municipio" name="municipio" min="1" value="1"/>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage-wrapper">
+                <!-- Banner de imagen superior -->
+                <div class="banner">
+                    <img src="/eboss_agencia_web/static/src/img/imagen3.png" alt="Alquiler de habitaciones"/>
+                    <h2 class="banner-text">Alquiler de habitaciones</h2>
+                </div>
+                
+                <!-- Encabezado y Descripción -->
+                <div class="description-section">
+                    <p class="subheading">Encuentra tu habitación de alquiler</p>
+                    <h1 class="main-title">Agencia de alquiler de habitaciones</h1>
+                    <p>
+                        EBOSS Agencia ha desarrollado un proyecto de gestión de propiedades y alquiler compartido para ayudar a personas que no pueden presentar documentos de respaldo al intentar alquilar una vivienda individual. En EBOSS Agencia, ofrecemos soluciones de alquiler compartido pensadas para estudiantes y jóvenes profesionales, proporcionando opciones de vivienda flexibles, accesibles y adaptadas a su estilo de vida dinámico.
+                    </p>
+                </div>
+
+                <!-- Sección de Iconos de Información -->
+                <div class="info-row">
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_grafica.png" alt="Mayor rentabilidad" class="info-image"/>
+                        <h3>Toda España</h3>
+                        <p>Cada día seguimos creciendo, estamos presentes en cualquier ubicación del territorio nacional. Contacta para más información.</p>
+                    </div>
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_grafica.png" alt="Mayor rentabilidad" class="info-image"/>
+                        <h3>Excelentes localizaciones</h3>
+                        <p>Nuestras viviendas están situadas en ubicaciones preferentes, céntricas, y con transporte público, comercios y todo tipo de servicios cercanos.</p>
+                    </div>
+                    <div class="info-box">
+                        <img src="/eboss_agencia_web/static/src/img/logo_grafica.png" alt="Mayor rentabilidad" class="info-image"/>
+                        <h3>Para todo el mundo</h3>
+                        <p>En Eboss Agencia, ofrecemos habitaciones para estudiantes, trabajadores, profesionales y personas que buscan una experiencia de convivencia dinámica y enriquecedora.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="final-section">
+                <div class="final-section-content">
+                    <p class="subheading">¿Estás buscando piso compartido?</p>
+                    <h1 class="main-title">Quiero alquilar una habitación</h1>
+                    <p>Con nosotros todo es mas fácil</p>
+                    <button onclick="location.href='alquileres'" class="contact-button">Ver Habitaciones</button>
+                </div>
             </div>
         </xpath>
     </template>

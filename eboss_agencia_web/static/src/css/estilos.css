@@ -1,3 +1,10 @@
+@media (max-width: 768px) {
+    .homepage-wrapper, .info-row, .property-section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #contenedor_header {
     display: flex;
     justify-content: space-between;
@@ -43,15 +50,14 @@
 
 /* Homepage */
 
-/* Nueva clase para el fondo gris del encabezado */
 .homepage-header {
-    background-color: #eaeaeaa7; /* Color gris */
-    padding: 10px; /* Espacio alrededor del texto */
+    background-color: #eaeaeaa7; 
+    padding: 10px; 
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-    position: absolute; /* Posición absoluta */
-    top: 120px; /* Ajusta según sea necesario */
+    position: absolute; 
+    top: 120px; 
 }
 
 /* Contenedor principal */
@@ -80,7 +86,7 @@
 }
 
 .background-image {
-    width: 95%; /* Ajusta el porcentaje según el espacio que quieras en los lados */
+    width: 97%; /* Ajusta el porcentaje según el espacio que quieras en los lados */
     height: 95%; /* Mantiene la proporción de la imagen */
     object-fit: cover;
     position: absolute;
@@ -105,7 +111,7 @@
 
 /* Nueva clase para la separación */
 .search-separation {
-    margin-top: 120px; /* Ajusta el valor según sea necesario */
+    margin-top: 100px; /* Ajusta el valor según sea necesario */
 }
 
 /* Formulario de búsqueda */
@@ -177,4 +183,201 @@
 
 .search-button:hover {
     background-color: #0056b3;
+}
+
+.text-separator {
+    margin-top: 50px;
+}
+
+.small-blue-text {
+    color: rgb(0, 208, 255);
+    font-size: 18px;
+}
+
+.large-text {
+    font-size: 28px; 
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; /* Esto ayudará a centrar el .info-row */
+    width: 80%; /* Puedes ajustar el valor de ancho según sea necesario */
+}
+
+.info-box {
+    flex: 1;
+    padding: 10px; 
+    text-align: center;
+}
+
+.info-box h3 {
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+.info-box p {
+    font-size: 14px; 
+    margin-bottom: 5px; 
+}
+
+.info-image {
+    width: 70px; 
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+/* Caja de seleccion */
+
+.property-section {
+    background-color: #f0f0f0; /* Fondo gris */
+    transform: skewY(-3deg); /* Inclinar el fondo */
+    padding: 40px 0;
+    margin: auto;
+    max-width: 97%;
+}
+
+.property-section-content {
+    transform: skewY(3deg); /* Revertir la inclinación para el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.property-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.property-image img {
+    margin-top: 50px;
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    background-color: #377dff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-form-container {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px; /* Ajusta la altura de la imagen según prefieras */
+    transform: skewY(-3deg);
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    margin: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transform: skewY(3deg);
+}
+
+
+.description-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.subheading {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.final-section {
+    background-color: #f0f0f0; /* Fondo gris */
+    transform: skewY(-3deg); /* Inclinar el fondo */
+    padding: 40px 0;
+    margin: auto;
+    max-width: 97%;
+}
+
+.final-section-content {
+    transform: skewY(3deg); /* Revertir la inclinación para el contenido */
+    text-align: center;
 }
