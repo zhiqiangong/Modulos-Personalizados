@@ -26,8 +26,12 @@
         </xpath>
         <xpath expr="//footer" position="replace">
             <!-- FOOTER -->
-            <footer class="footer">
-                Footer
+            <footer class="footer-background">
+                <div class="footer-container">
+                    <div class="footer-image-container">
+                        <img src="/eboss_agencia_web/static/src/img/logo_eboss.png" alt="Logo" id="footer_logo"/>
+                    </div>
+                </div>
             </footer>
         </xpath>
     </template>

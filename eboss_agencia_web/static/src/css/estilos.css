@@ -48,6 +48,28 @@
     background-color: #f3f3f3;
 }
 
+/* Footer */
+
+.footer-background {
+    background-color: #084F9F; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    padding: 20px 0;
+}
+
+.footer-container{
+    width: 85%;
+    height: 92%;
+    margin: auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+.footer-image-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
 /* Homepage */
 
 .homepage-header {
@@ -76,6 +98,8 @@
     margin-bottom: 20px;
 }
 
+/* Contenedores */
+
 .background-container {
     position: relative;
     width: 100%;
@@ -85,18 +109,7 @@
     align-items: center;
 }
 
-.background-image {
-    width: 97%; /* Ajusta el porcentaje según el espacio que quieras en los lados */
-    height: 95%; /* Mantiene la proporción de la imagen */
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centra la imagen horizontalmente */
-    z-index: 1;
-}
-
-/* Caja de búsqueda */
+/* Contenedor de búsqueda de pisos por municipios (homepage) */
 .search-container {
     display: inline-block;
     background-color: white;
@@ -109,32 +122,154 @@
     z-index: 2;
 }
 
-/* Nueva clase para la separación */
-.search-separation {
-    margin-top: 100px; /* Ajusta el valor según sea necesario */
+/* Contenedor diagonal positivo de alquilar piso (homepage) */
+.property-section-content {
+    transform: skewY(3deg); 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
-/* Formulario de búsqueda */
+/* Contenedor diagonal negativo de color gris (homepage) */
+.diagonal-section {
+    background-color: #f0f0f0; 
+    transform: skewY(-3deg);
+    padding: 40px 0;
+    margin: auto;
+    max-width: 97%;
+}
+
+/* Contenedor diagonal negativo de imagen (homepage) */
+.banner-container {
+    position: relative;
+    width: 97%;
+    overflow: hidden;
+    margin: auto;
+    height: 180px;
+    transform: skewY(-3deg);
+}
+
+/* Imagen dentro del contenedor inclinado (homepage) */
+.banner-container img {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+/* Texto dentro del contenedor de imagen (homepage) */
+.banner-text {
+    margin: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transform: skewY(3deg);
+    z-index: 2;
+}
+
+/* Contenedor de texto con inclinacion positiva encima de la imagen (homepage) */
+.banner-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Contenedor final del homepage con inclinacion positivia (homepage) */
+.final-section-content {
+    transform: skewY(3deg);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Contenedor de colo blanco (nosotros y FAQs) */
+.white-container {
+    background-color: #ffffff;
+    width: 85%;
+    height: 92%;
+    margin: auto;
+    position: relative; /* Necesario para que el azul esté en el contexto */
+}
+
+/* Contenedor de listas de objetivos (nosotros) */
+.objetivos-container {
+    max-width: 100%; /* Ancho máximo para mantener un diseño compacto */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    color: #444; /* Color del texto */
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+/* Contener Azul (FAQs) */
+.blue-container {
+    background-color: #4fb0ff;
+    padding: 25px 0;
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 100%;
+    top: -90px; /* Mueve el bloque azul para que sobresalga */
+}
+
+/* Titulo del contener Azul (FAQs) */
+.blue-container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+/* Imagenes */
+
+/* Imagen de fondo (homepage) */
+.background-image {
+    width: 97%; /* Ajusta el porcentaje según el espacio que quieras en los lados */
+    height: 95%; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    z-index: 1;
+}
+
+/* Imagen de informacion (homepage y nosotros) */
+.info-image {
+    width: 70px; 
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+/* Formulario de búsqueda provincia e municipio (homepage) */
 .search-form {
     display: flex;
     gap: 15px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap;
 }
 
-/* Contenedor de cada selector */
+.search-form-group {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de cada selector de alquilar piso (homepage) */
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 180px;
     background-color: white; /* Match background color */
-}
-
-/* Estilo del selector */
-.select-group {
-    position: relative;
 }
 
 .select-input {
@@ -165,49 +300,45 @@
     border-top: 5px solid #007bff; /* Blue triangle */
 }
 
-/* Estilo del botón */
+/* Estilo del botón (homepage)*/
 .search-button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
     transition: background-color 0.3s;
-    align-self: flex-end; /* Align button to bottom right */
-    margin-top: 15px; /* Add margin to position it correctly */
 }
 
-.search-button:hover {
+.search-button:hover {  
     background-color: #0056b3;
 }
 
-.text-separator {
-    margin-top: 50px;
+/* boton de faqs (FAQs) */
+.accordion-button {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
 
-.small-blue-text {
-    color: rgb(0, 208, 255);
-    font-size: 18px;
-}
-
-.large-text {
-    font-size: 28px; 
+.accordion-button:not(.collapsed) {
+    background-color: #cce4ff;
+    color: #000;
 }
 
 .info-row {
     display: flex;
     justify-content: center;
-    margin: 20px auto; /* Esto ayudará a centrar el .info-row */
-    width: 80%; /* Puedes ajustar el valor de ancho según sea necesario */
+    margin: 20px auto;
+    width: 85%;
 }
 
 .info-box {
     flex: 1;
-    padding: 10px; 
+    padding: 15px; 
     text-align: center;
 }
 
@@ -221,68 +352,6 @@
     margin-bottom: 5px; 
 }
 
-.info-image {
-    width: 70px; 
-    height: 70px;
-    margin-bottom: 10px;
-}
-
-/* Caja de seleccion */
-
-.property-section {
-    background-color: #f0f0f0; /* Fondo gris */
-    transform: skewY(-3deg); /* Inclinar el fondo */
-    padding: 40px 0;
-    margin: auto;
-    max-width: 97%;
-}
-
-.property-section-content {
-    transform: skewY(3deg); /* Revertir la inclinación para el contenido */
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.property-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.property-image img {
-    margin-top: 50px;
-    max-width: 100%;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.contact-button {
-    background-color: #377dff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.property-form-container {
-    flex: 2;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.property-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .form-row {
     display: flex;
     gap: 15px;
@@ -294,6 +363,7 @@
     flex: 1;
     min-width: 150px;
     margin-bottom: 15px;
+    background-color: #f0f0f0;;
 }
 
 .form-group label {
@@ -306,54 +376,7 @@
 .form-group select {
     width: 100%;
     padding: 8px;
-    border-radius: 8px;
     border: 1px solid #ccc;
-}
-
-.submit-button {
-    display: block;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
-}
-
-.banner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 300px; /* Ajusta la altura de la imagen según prefieras */
-    transform: skewY(-3deg);
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner-text {
-    margin: auto;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    transform: skewY(3deg);
-}
-
-
-.description-section {
-    text-align: center;
-    padding: 20px;
 }
 
 .subheading {
@@ -362,22 +385,42 @@
     font-size: 16px;
 }
 
-.main-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.gray-background {
+    background-color: #f0f0f0;  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.final-section {
-    background-color: #f0f0f0; /* Fondo gris */
-    transform: skewY(-3deg); /* Inclinar el fondo */
-    padding: 40px 0;
-    margin: auto;
-    max-width: 97%;
+.nosotros-img{
+    width: 67%;
+    height: 67%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-.final-section-content {
-    transform: skewY(3deg); /* Revertir la inclinación para el contenido */
-    text-align: center;
+/* Lista ordenada */
+.objetivos_list {
+    text-align: left;
+    margin-top: 20px; 
+    padding-left: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Sección debajo del azul */
+.content-section {
+    background-color: rgb(211, 235, 255);
+    padding: 7px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    top: -90px;
+}
+
+.accordion-body {
+    font-size: 14px;
+    color: #555;
+    padding: 15px;
 }

@@ -2,8 +2,61 @@
     <data>
         <template id="nosotros_page" name="Alquileres Page">
             <t t-call="portal.frontend_layout">
-                <div>
-                    <h1>Nosotros</h1>
+                <div style="padding: 50px 0;" class="gray-background">
+                    <div style="padding: 60px;" class="white-container">
+                        <p>Es importante destacar que la gestión de propiedades en España está regulada por la ley y existen numerosos requisitos y obligaciones que deben cumplir los gestores de propiedades para operar legalmente. Por esta razón, es importante contratar a un gestor de propiedades profesional y debidamente registrado para garantizar un servicio de calidad y cumplir con todas las regulaciones legales.</p>
+                        <p>Uno de los objetivos de EBOSS en España es cumplir con este proyecto, que consiste en una agencia de gestión de propiedades y gestión de alquiler de viviendas.</p>
+                        <p><span style="font-weight: bold;">EBOSS AGENCIA</span> es un proyecto dedicado a la gestión de propiedades en España, que incluye la gestión de alquiler de viviendas y habitaciones, así como la reforma de propiedades.</p>
+                        <div class="info-row">
+                            <div class="info-box">
+                                <img src="/eboss_agencia_web/static/src/img/logo_alquiler.png" alt="Alquiler 100% seguro" class="info-image"/>
+                                <h3>Gestión de alquileres</h3>
+                                <p>Nos encargamos de todo el proceso de alquiler, desde la promoción y selección de inquilinos hasta la firma y finalización del contrato. Además, en EBOSS Agencia ofrecemos un servicio integral de mantenimiento para las propiedades, asegurando su óptimo estado. Contamos con un Seguro Premium que cubre las reparaciones y un equipo dedicado que realiza inspecciones mensuales.</p>
+                            </div>
+                            <div class="info-box">
+                                <img src="/eboss_agencia_web/static/src/img/logo_grafica.png" alt="Mayor rentabilidad" class="info-image"/>
+                                <h3>Alquiler 100% seguro</h3>
+                                <p>Eboss Agencia asume el 100% del riesgo del alquiler mediante un contrato directo con el propietario, garantizando un pago mensual fijo incluso cuando la vivienda no esté alquilada, y ofreciendo un servicio completo y sin complicaciones.</p>
+                            </div>
+                            <div class="info-box">
+                                <img src="/eboss_agencia_web/static/src/img/logo_gestion.png" alt="Gestión integral" class="info-image"/>
+                                <h3>Mayor rentabilidad</h3>
+                                <p>El alquiler de viviendas compartidas supone de media un 15% más de ingresos anuales para nuestros propietarios.</p>
+                            </div>
+                        </div>  
+                        <div style="
+                                margin-top: 50px;    
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;">
+                            <img src="/eboss_agencia_web/static/src/img/imagen4.png" class="nosotros-img"/>
+                        </div> 
+                        <div>
+                            <p style="text-align: center; font-weight: bold;">Estamos en la Calle Apenins 24 de Badalona 08917 (Barcelona)</p>
+                        </div>
+                        <div style="margin-top: 50px;" class="objetivos-container ">
+                            <h1 style=
+                                    "font-size: 32px;
+                                    margin-bottom: 20px;
+                                    text-align: left;" 
+                                class="subheading">Objetivos de Eboss Agencia</h1>
+                             <ol class="objetivos_list">
+                                <li>
+                                    Proporcionar servicios integrales y profesionales de gestión de propiedades a sus clientes, incluyendo la publicidad y promoción de propiedades, selección de inquilinos confiables, administración de arrendamiento, mantenimiento y reparación de propiedades, y manejo de emergencias.
+                                </li>
+                                <li>
+                                    Mejorar la rentabilidad de las propiedades de los clientes y minimizar los riesgos asociados con la gestión de propiedades.
+                                </li>
+                                <li>
+                                    Ofrecer servicios integrales de reforma para modernizar y aumentar el valor de las propiedades de los clientes, adaptados a sus necesidades y presupuesto.
+                                </li>
+                                <li>
+                                    Proporcionar opciones accesibles de vivienda para jóvenes profesionales y estudiantes.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </t>    
         </template>

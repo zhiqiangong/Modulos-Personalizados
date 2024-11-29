@@ -22,9 +22,6 @@
     "assets": {
         'web.assets_frontend': [
             'eboss_agencia_web/static/src/css/estilos.css',
-            'eboss_agencia_web/static/src/img/logo.png',
-            'eboss_agencia_web/static/src/img/imagen.png',
-            'eboss_agencia_web/static/src/img/imagen2.png',
         ],
     },
 

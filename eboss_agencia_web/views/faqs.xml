@@ -1,14 +1,162 @@
 <odoo>
     <data>
-        <template id="faqs_page" name="Alquileres Page">
+        <template id="faqs_page" name="FAQs Page">
             <t t-call="portal.frontend_layout">
-                <div class="contenedo_backend">
-                    <div>
-                    </div>
-                    <div>
+                <div style=
+                        "padding: 100px 0;
+                        height: 100%;" 
+                    class="gray-background">
+                    <div style="padding: 30px;" class="white-container">
+                        <!-- Título azul -->
+                        <div class="blue-container">
+                            <p>FAQs</p>
+                        </div>
+                        
+                        <!-- Acordeón para preguntas frecuentes -->
+                        <div class="accordion" id="faqAccordion">
+                            <!-- Pregunta 1 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        ¿Cuándo tengo que pagar el alquiler?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        El alquiler comienza en el momento en que firmas el contrato y recibes las llaves.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 2 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Cuáles son los métodos de pago?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes pagar mediante transferencia bancaria, tarjeta de crédito o débito.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 3 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Cómo puedo contactar con el soporte técnico?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes contactar con soporte enviando un correo electrónico a soporte@ejemplo.com.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 4 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        ¿Qué debo hacer si pierdo mi contraseña?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes restablecer tu contraseña desde la página de inicio de sesión seleccionando "¿Olvidaste tu contraseña?".
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 5 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        ¿Cuánto tiempo tarda en procesarse un pago?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Generalmente, un pago tarda entre 1 y 3 días hábiles en procesarse.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 6 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        ¿Dónde puedo ver mis facturas?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes ver tus facturas en tu panel de usuario, en la sección "Facturación".
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 7 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        ¿Es posible cambiar la fecha de vencimiento de mi factura?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, puedes solicitar un cambio de fecha de vencimiento contactando con soporte.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 8 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        ¿Hay algún descuento disponible?
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Ofrecemos descuentos para pagos anuales. Contáctanos para más información.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 9 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        ¿Cómo cancelo mi suscripción?
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Puedes cancelar tu suscripción desde la configuración de tu cuenta.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pregunta 10 -->
+                            <div class="content-section">
+                                <h2 class="accordion-header" id="headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        ¿Qué ocurre si mi pago falla?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Si un pago falla, recibirás una notificación y podrás reintentarlo desde tu panel de usuario.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </t>    
+            </t>
         </template>
-    </data>    
+    </data>
 </odoo>
